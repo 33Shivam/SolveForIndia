@@ -13,10 +13,10 @@ class home extends React.Component {
     <div class="header-form">
       <h2>Choose your Travel location:</h2>
       <form class="flex">
-        <input type="text" class="form-control" placeholder="Destination name" />
-        <input type="date" class="form-control" placeholder="Date" />
-        <input type="number" class="form-control" placeholder="Price ($)" />
-        <input type="submit" class="btn" value="Search" />
+        <input type="text" class="form-control" id = "name" placeholder="Your Name" />
+        <input type="text" class="form-control" id="destination" placeholder="Destinaton" />
+        <input type="text" class="form-control" id="source" placeholder="Arrival" />
+        <input type="submit" class="btn" id="mint-button" value="Book My Ticket" />
       </form>
     </div>
   </div>

@@ -23,6 +23,7 @@ class Header extends React.Component {
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts"
         });
+        
         this.setState({ walletAddress: accounts[0] });
         console.log(accounts);
       } catch (err) {
@@ -101,3 +102,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+

@@ -12,10 +12,53 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Gallery from './pages/Gallery';
+
+
+
+import { ethers } from "ethers";
+
+// Import Mint contract ABI
+import mintAbi from "./mint.json";
+
+
   
 
 
 function App() {
+// Connect to Ethereum network
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+// Set contract address
+const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+
+// Create instance of Mint contract
+const mintContract = new ethers.Contract(contractAddress, mintAbi, provider.getSigner());
+
+// Function to mint new NFT
+async function mintNFT() {
+  // Get input values from HTML form
+  const name = document.getElementById("name").value;
+  const wallet = "0x976EA74026E726554dB657fA54763abd0C3a0aa9";
+  const source = document.getElementById("source").value;
+  const destination = document.getElementById("destination").value;
+
+  // Call mintTicket function on Mint contract
+  const mintTx = await mintContract.mintTicket(name, wallet, source, destination);
+  await mintTx.wait();
+
+  // Log number of tokens after minting
+  const tokenCount = await mintContract.tokenCount();
+  console.log(`Number of tokens: ${tokenCount}`);
+}
+
+// Attach event listener to "mint" button
+const mintButton = document.getElementById("mint-button");
+  if (mintButton) {
+    mintButton.addEventListener("click", mintNFT);
+  }
+  
+
+  
 
   
 
