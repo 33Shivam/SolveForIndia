@@ -7,11 +7,11 @@ class home extends React.Component {
         <header class="flex">
   <div class="container">
     <div class="header-title">
-      <h1>Leave Your Footprints</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+      <h1>Experience travel like never before, with NFTs</h1>
+      <p>With NFTs as your tickets, travel becomes an unforgettable experience. No more paper tickets, no more lines. Each NFT is unique and secure, giving you access to exclusive experiences. Say goodbye to the hassle and uncertainty of traditional ticketing and hello to a new era of seamless and personalized travel experiences.</p>
     </div>
     <div class="header-form">
-      <h2>Choose your Travel location:</h2>
+      <h2>Mint Your Train Ticket</h2>
       <form class="flex">
         <input type="text" class="form-control" id = "name" placeholder="Your Name" />
         <input type="text" class="form-control" id="destination" placeholder="Destinaton" />

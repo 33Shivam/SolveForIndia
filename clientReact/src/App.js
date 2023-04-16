@@ -12,6 +12,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Gallery from './pages/Gallery';
+import Web3 from 'web3';
 
 
 
@@ -29,13 +30,14 @@ function App() {
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 // Set contract address
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = " 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
 
 // Create instance of Mint contract
 const mintContract = new ethers.Contract(contractAddress, mintAbi, provider.getSigner());
 
 // Function to mint new NFT
-async function mintNFT() {
+async function mintNFT(event) {
+  event.preventDefault();
   // Get input values from HTML form
   const name = document.getElementById("name").value;
   const wallet = "0x976EA74026E726554dB657fA54763abd0C3a0aa9";
@@ -52,10 +54,13 @@ async function mintNFT() {
 }
 
 // Attach event listener to "mint" button
-const mintButton = document.getElementById("mint-button");
-  if (mintButton) {
-    mintButton.addEventListener("click", mintNFT);
-  }
+function addEventListeners() {
+  const mintButton = document.getElementById("mint-button");
+  mintButton.addEventListener("click", mintNFT);
+}
+
+window.addEventListener("load", addEventListeners);
+
   
 
   
@@ -77,6 +82,7 @@ const mintButton = document.getElementById("mint-button");
 
     </Router>
   </div>;
+ 
 }
 
 export default App;
