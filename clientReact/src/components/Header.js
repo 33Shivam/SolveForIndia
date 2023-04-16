@@ -23,6 +23,7 @@ class Header extends React.Component {
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts"
         });
+        
         this.setState({ walletAddress: accounts[0] });
         console.log(accounts);
       } catch (err) {
@@ -46,7 +47,7 @@ class Header extends React.Component {
       <nav className="navbar">
         <div className="container flex">
           <a href="index.html" className="site-brand">
-            Trip<span>Boss</span>
+            Train<span>Block</span>
           </a>
 
           <button type="button" id="navbar-show-btn" className="flex">
@@ -101,3 +102,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+
