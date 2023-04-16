@@ -30,7 +30,7 @@ function App() {
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 // Set contract address
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707";
 
 // Create instance of Mint contract
 const mintContract = new ethers.Contract(contractAddress, mintAbi, provider.getSigner());
