@@ -3,7 +3,7 @@
 ## Project Brief
 Non-fungible tokens (NFTs) have gained popularity in recent years as a secure and verifiable way to represent digital assets. In this project, we explore the use of NFTs in IRCTC Railways to provide secure and verifiable ticketing for passengers. By using NFTs, passengers can purchase and redeem their tickets digitally, eliminating the need for paper tickets and reducing the risk of fraud. We will develop a DAPP that allows passengers to search for train routes, purchase NFT tickets, and store them securely on their mobile device. The application will feature faster online booking, resoldable tickets, and less need for ground surveillance. Additionally, we will associate some travel benefits with NFT tickets, such as priority boarding or access to lounges, and offer discounts for regular travelers on a specific route, incentivizing them to use NFT tickets for their journeys. Users can also take up loans on their NFTs, which they have to clear after the journey ends. This is beneficial in situations where there are network issues with payments. The application will also provide ticket inspectors with a way to verify the authenticity of NFT tickets. Through this project, we aim to provide a more secure, convenient, and rewarding ticketing system for IRCTC Railways passengers.
 
-For Results, Future Plansand More Information on the project view -  (https://github.com/33Shivam/SolveForIndia/blob/0265a1d6d38ae3c3798413c2590daeeb568d1bdf/NEXT%20GENERATION%20TICKET%20SYSTEM.pdf)
+For Results, Future Plans and More Information on the project view -  (https://github.com/33Shivam/SolveForIndia/blob/0265a1d6d38ae3c3798413c2590daeeb568d1bdf/NEXT%20GENERATION%20TICKET%20SYSTEM.pdf)
 (**DOWNLOAD ONLY**)
 ## Prerequisites
 
